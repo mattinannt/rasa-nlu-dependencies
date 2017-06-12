@@ -12,7 +12,4 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-RUN pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-1.2.0/en_core_web_sm-1.2.0.tar.gz --no-cache-dir > /dev/null \
-    && python -m spacy link en_core_web_sm en \
-    && pip install https://github.com/explosion/spacy-models/releases/download/de_core_news_md-1.0.0/de_core_news_md-1.0.0.tar.gz --no-cache-dir > /dev/null \
-    && python -m spacy link de_core_news_md de
+RUN python -m spacy download en && python -m spacy download de
