@@ -12,4 +12,4 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-RUN python -m spacy download en && python -m spacy download de
+RUN python -m spacy download en
