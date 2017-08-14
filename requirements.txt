@@ -2,7 +2,7 @@
 # spacy
 spacy==1.9.0
 # sklearn
-scikit-learn==0.18.2
+scikit-learn==0.18.1
 scipy==0.19.1
 # duckling
 duckling==1.7.2
