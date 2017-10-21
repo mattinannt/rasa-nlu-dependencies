@@ -1,4 +1,4 @@
-# bare requirements
+# basic requirements
 gevent==1.2.1
 klein==17.2.0
 boto3==1.4.4
@@ -11,6 +11,7 @@ requests==2.14.2
 tqdm==4.11.2
 numpy==1.13.1
 simplejson==3.11.1
+cloudpickle==0.2.2
 
 # spacy sklearn
 spacy==1.8.2
